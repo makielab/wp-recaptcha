@@ -165,9 +165,7 @@ if (!class_exists('reCAPTCHA')) {
         
         // todo: make unnecessary
         function register_stylesheets() {
-            $path = WPPlugin::url_to_plugin_directory() . '/recaptcha.css';
-                
-            echo '<link rel="stylesheet" type="text/css" href="' . $path . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('recaptcha.css', __FILE__) . '" />';
         }
         
         // stylesheet information
